@@ -1,0 +1,78 @@
+body{
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+
+}
+        .image-container {
+            position: relative;
+        }
+
+        .image {
+            opacity: 1;
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: .5s ease;
+            backface-visibility: hidden;
+        }
+
+        .middle {
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .image-container:hover .image {
+            opacity: 0.3;
+        }
+
+        .image-container:hover .middle {
+            opacity: 1;
+        }
+
+/* Button Styling */
+
+input[type=button] {
+    padding:5px; 
+    border:2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+
+
+/* Navigation Bar */
+.icon-bar {
+  width: 100%; /* Full-width */
+  background-color: #424949; /* Dark-grey background */
+  overflow: hidden; /* Overflow due to float */
+  bottom: 0;
+  position: fixed;
+  margin-left:0px;
+  height: 75px;
+}
+
+.icon-bar a {
+  float: left; /* Float links side by side */
+  text-align: center; /* Center-align text */
+  width: 33%; /* Equal width (3 icons with 33% width each = 100%) */
+  padding: 12px 0; /* Some top and bottom padding */
+  transition: all 0.3s ease; /* Add transition for hover effects */
+  color: white; /* White text color */
+  font-size: 36px; /* Increased font size */
+}
+
+.icon-bar a:hover {
+  background-color: black; /* Add a hover color */
+}
+
+.active {
+  background-color: #2874A6; /* Add an active/current color */
+}
+
