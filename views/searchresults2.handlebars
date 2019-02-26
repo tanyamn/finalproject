@@ -1,0 +1,72 @@
+<!doctype html>
+
+<html>
+<head>
+
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+	<link rel="stylesheet" href="../css/searchresults2CSS.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+<div class="container">
+
+	<div class="back">
+		<a href="/search" id="back" class="previous">&laquo; Back</a>
+	</div>
+
+	<br>
+
+
+    <hgroup class="mb20">
+		<h1>Search Results</h1>
+		<h2 class="lead"><strong class="text-danger">5</strong> results were found for your search</h2>								
+	</hgroup>
+
+	{{#each mentors}}
+
+    <section class="col-xs-12 col-sm-6 col-md-12">
+		<article class="search-result row">
+			<div class="col-xs-12 col-sm-12 col-md-3">
+				<h3><a href="#" title="">{{name}}</a></h3>	
+				<a href="#" title="Lorem ipsum" class="thumbnail"><img src="{{imageURL}}" alt="Lorem ipsum" /></a>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-2">
+				<ul class="meta-search">
+					<li><span>{{job}}</span></li>
+					<li><span>{{company}}</span></li>
+					<li><span>{{location}}</span></li>
+				</ul>
+			</div>
+			<span class="clearfix borda"></span>
+		</article>
+
+	</section>
+
+	{{/each}}
+
+	<hr style="height:30pt; visibility:hidden;" />
+
+</div>
+
+	<div class="icon-bar">
+		<a class="active" href="/search"><i class="fa fa-search"></i></a>
+		<a href="/messages"><i class="fa fa-commenting-o"></i></a>
+		<a href="/myprofile"><i class="fa fa-user-circle"></i></a>
+	</div>
+
+</body>
+</html>
+
+
+
+
+
+
+

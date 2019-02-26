@@ -6,3 +6,7 @@ exports.view = function(request, response){
 	response.render('searchresults', data);
 };
 
+exports.view = function(request, response){
+	console.log(data);
+	response.render('searchresults2', data);
+}
