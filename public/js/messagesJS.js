@@ -1,41 +1,27 @@
-
-
-function disappearMessage() {
-  var x = document.getElementById("disappear");
-  if (x.style.display === "none") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-
-/*
-function disappearMessage0() {
-    var x = document.getElementById('disappear');
-    var displaySetting = x.style.display;
-    var sendButton = document.getElementById('send')
-
-    if (displaySetting == 'block') {
-        x.style.display = 'none';
-    }
-    else{
-        x.style.display = 'block';
-    }
-}
-*/
-
-
-
-/*
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-  */
-
-
 $(document).ready(function(){
+
+    
+    // $("button").click(projectClick);
+
+    // function projectClick(e) { 
+    //     // prevent the page from reloading      
+    //     e.preventDefault();
+    //     // In an event handler, $(this) refers to      
+    //     // the object that triggered the event  
+    //     $(this).text(myMessage.value);
+
+    // }
+
+
+    $("#send").click(function(){
+        AddText();
+    });
+
+    function AddText() {
+        messageVal = myMessage.value;
+        $('<div class="message right" id="rightmessage"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqPgOH0njEY3NvX_8SkzJdA73JPgl-H97HXJJCR1yIOqpjX_zdfg"/><div class="bubble">' + messageVal + '<div class="corner"></div><span>Now</span></div></div>').appendTo("#chat-messages");
+        // document.getElementById("#myMessage").reset();
+    }
     
   var preloadbg = document.createElement("img");
   preloadbg.src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/timeline1.png";
