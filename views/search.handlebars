@@ -43,92 +43,92 @@
    margin-top:15px;
    font:30px;
    background-color: #f2f2f2;
-  }
+ }
 
-  h1 {
-    font-size: 2.5em;
-    padding: 10px;
+ h1 {
+  font-size: 2.5em;
+  padding: 10px;
 }
 
-  /*the container must be positioned relative:*/
-  .autocomplete {
-    position: relative;
-    display: inline-block;
-  }
+/*the container must be positioned relative:*/
+.autocomplete {
+  position: relative;
+  display: inline-block;
+}
 
-  input {
-    border: 1px solid transparent;
-    background-color: #f2f2f2;
-    padding: 10px;
-    font-size: 16px;
-    margin-left: 18px;
-    border: 1px solid black;
-  }
+input {
+  border: 1px solid transparent;
+  background-color: #f2f2f2;
+  padding: 10px;
+  font-size: 16px;
+  margin-left: 18px;
+  border: 1px solid black;
+}
 
-  input[type=text] {
-    background-color: #f2f2f2;
-    width: 73%;
+input[type=text] {
+  background-color: #f2f2f2;
+  width: 73%;
 
-  }
+}
 
-  input[type=submit] {
-    background-color: DodgerBlue;
-    color: #fff;
-    cursor: pointer;
-  }
+input[type=submit] {
+  background-color: DodgerBlue;
+  color: #fff;
+  cursor: pointer;
+}
 
 
 
-  .autocomplete-items {
-    position: absolute;
-    border: 1px solid #d4d4d4;
-    border-bottom: none;
-    border-top: none;
-    z-index: 99;
-    /*position the autocomplete items to be the same width as the container:*/
-    top: 100%;
-    left: 0;
-    right: 0;
-  }
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
 
-  .autocomplete-items div {
-    padding: 10px;
-    cursor: pointer;
-    background-color: #fff; 
-    border-bottom: 1px solid #d4d4d4; 
-  }
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff; 
+  border-bottom: 1px solid #d4d4d4; 
+}
 
-  /*when hovering an item:*/
-  .autocomplete-items div:hover {
-    background-color: #e9e9e9; 
-  }
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+  background-color: #e9e9e9; 
+}
 
-  /*when navigating through the items using the arrow keys:*/
-  .autocomplete-active {
-    background-color: DodgerBlue !important; 
-    color: #ffffff; 
-  }
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+  background-color: DodgerBlue !important; 
+  color: #ffffff; 
+}
 
-  .dropdown-menu {
-    margin-right: 193px;
+.dropdown-menu {
+  margin-right: 193px;
 
-  }
+}
 
- #filter {
-  	margin-left: 18px;
-    border: 1px solid black;
-  }
+#filter {
+ margin-left: 18px;
+ border: 1px solid black;
+}
 
-  #searchBtn {
-  	margin-left:3px;
-    height: 45px;
-    width:43px;
-    border: 1px solid black;
-    margin-bottom: 3px;
-  }
-  
+#searchBtn {
+ margin-left:3px;
+ height: 45px;
+ width:43px;
+ border: 1px solid black;
+ margin-bottom: 3px;
+}
 
-  /* Navigation Bar */
+
+/* Navigation Bar */
 .icon-bar {
   width: 100%; /* Full-width */
   background-color: #424949; /* Dark-grey background */
@@ -158,26 +158,42 @@
 }
 
 </style>
+
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-135187707-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+
+
+
+
 </head>     
 <body>
 
   <div class="container">
     
 
-      <h1> <b><i class="fa fa-search" aria-hidden="true"></i> Search</b></h1>
+    <h1> <b><i class="fa fa-search" aria-hidden="true"></i> Search</b></h1>
 
       <!--
       <a href="index.html">
       Back to home
       </a>
-      -->
+    -->
     
   </div>
 
-    <div class="paragraph">
-      <p> Search for mentors here by name, profession, or location. Use the drop-down menu to filter results. </p>
-      <br>
-    </div>
+  <div class="paragraph">
+    <p> Search for mentors here by name, profession, or location. Use the drop-down menu to filter results. </p>
+    <br>
+  </div>
 
 
   <!--Make sure the form has the autocomplete function switched off:-->
@@ -209,22 +225,22 @@
 
     <div class="autocomplete" style="width:300px;">
       <input id="myInput" type="text" name="searchbar" placeholder="Search">
-   
+      
 
-    
-    <button id="searchBtn" type="button" class="btn btn-secondary btn-search" onclick="location.href='/searchresults'"><span class="glyphicon glyphicon-search" >&nbsp;</span> <span class="label-icon" ></span></button>
-  </div>
+      
+      <button id="searchBtn" type="button" class="btn btn-secondary btn-search" onclick="location.href='/searchresults'"><span class="glyphicon glyphicon-search" >&nbsp;</span> <span class="label-icon" ></span></button>
+    </div>
 
 
-</form>
+  </form>
 
-<div class="icon-bar">
-	<a class="active" href="/search"><i class="fa fa-search"></i></a>
-	<a href="/messages"><i class="fa fa-commenting-o"></i></a>
-	<a href="/myprofile"><i class="fa fa-user-circle"></i></a>
-</div>
+  <div class="icon-bar">
+   <a class="active" href="/search"><i class="fa fa-search"></i></a>
+   <a href="/messages"><i class="fa fa-commenting-o"></i></a>
+   <a href="/myprofile"><i class="fa fa-user-circle"></i></a>
+ </div>
 
-<script>
+ <script>
   function autocomplete(inp, arr) {
   /*the autocomplete function takes two arguments,
   the text field element and an array of possible autocompleted values:*/
