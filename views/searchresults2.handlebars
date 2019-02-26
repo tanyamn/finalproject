@@ -15,45 +15,46 @@
 
 <body>
 
-<div class="container">
+	<div class="container">
 
-	<div class="back">
-		<a href="/search" id="back" class="previous">&laquo; Back</a>
+		<div class="back">
+			<a href="/search" id="back" class="previous">&laquo; Back</a>
+		</div>
+
+		<br>
+
+
+	    <hgroup class="mb20">
+			<h1><strong>Search Results</strong></h1>
+			<h2 class="lead"><strong class="text-danger">5</strong> results were found for your search</h2>								
+		</hgroup>
+
+		{{#each mentors}}
+
+	<div class="row">
+		<div class="list-group">
+            <div class="list-group-item clearfix">
+                <div class="profile-teaser-left">
+                    <div class="profile-img"><img src="{{imageURL}}"/></div>
+                </div>
+                <div class="profile-teaser-main">
+                    <h2 class="profile-name"> <a href="/{{profile}}" title=""><u>{{name}}</u></a></h2>
+                    <div class="profile-info">
+                        <div class="info"><span class="job">Job:</span> {{job}}</div>
+                        <div class="info"><span class="company">Company:</span> {{company}}</div>
+                        <div class="info"><span class="location">Location</span> {{location}}</div>
+                    </div>
+                </div>
+            </div><!-- item -->
+            
+        </div>
 	</div>
 
-	<br>
-
-
-    <hgroup class="mb20">
-		<h1>Search Results</h1>
-		<h2 class="lead"><strong class="text-danger">5</strong> results were found for your search</h2>								
-	</hgroup>
-
-	{{#each mentors}}
-
-    <section class="col-xs-12 col-sm-6 col-md-12">
-		<article class="search-result row">
-			<div class="col-xs-12 col-sm-12 col-md-3">
-				<h3><a href="#" title="">{{name}}</a></h3>	
-				<a href="#" title="Lorem ipsum" class="thumbnail"><img src="{{imageURL}}" alt="Lorem ipsum" /></a>
-			</div>
-			<div class="col-xs-12 col-sm-12 col-md-2">
-				<ul class="meta-search">
-					<li><span>{{job}}</span></li>
-					<li><span>{{company}}</span></li>
-					<li><span>{{location}}</span></li>
-				</ul>
-			</div>
-			<span class="clearfix borda"></span>
-		</article>
-
-	</section>
-
 	{{/each}}
-
-	<hr style="height:30pt; visibility:hidden;" />
-
 </div>
+
+
+<br><br><br>
 
 	<div class="icon-bar">
 		<a class="active" href="/search"><i class="fa fa-search"></i></a>
