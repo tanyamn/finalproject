@@ -53,8 +53,10 @@ if ('development' == app.get('env')) {
 
 // Add routes here
 app.get('/', index.view)
- app.get('/searchresults/page_A', searchresults.view);
- app.get('/searchresults/page_B', searchresults2.view);
+ app.get('/searchresults', searchresults.view);
+ app.get('/searchresults/page_B', searchresults.viewAlt);
+
+ app.get('/searchresults/page_B/2', searchresults2.view);
 app.get('/messages', messages.view);
 app.get('/myprofile', myprofile.view);
 app.get('/search', search.view);
