@@ -1,27 +1,22 @@
 $(document).ready(function(){
 
-    
-    // $("button").click(projectClick);
-
-    // function projectClick(e) { 
-    //     // prevent the page from reloading      
-    //     e.preventDefault();
-    //     // In an event handler, $(this) refers to      
-    //     // the object that triggered the event  
-    //     $(this).text(myMessage.value);
-
-    // }
-
-
     $("#send").click(function(){
         AddText();
+        ClearFields();
+        var objDiv = document.getElementById("chat-messages");
+        objDiv.scrollTop = objDiv.scrollHeight;
     });
 
     function AddText() {
         messageVal = myMessage.value;
         $('<div class="message right" id="rightmessage"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqPgOH0njEY3NvX_8SkzJdA73JPgl-H97HXJJCR1yIOqpjX_zdfg"/><div class="bubble">' + messageVal + '<div class="corner"></div><span>Now</span></div></div>').appendTo("#chat-messages");
-        // document.getElementById("#myMessage").reset();
+        
     }
+
+    function ClearFields() {
+        document.getElementById("myMessage").value = "";
+    }
+
     
   var preloadbg = document.createElement("img");
   preloadbg.src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/timeline1.png";
