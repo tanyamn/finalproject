@@ -23,8 +23,8 @@ function changeUser(response) {
   //Add code to change name and image 
   console.log("here");
   $(".facebookLogin").hide();
-  //window.location.href="/search"
-  $("#photo").attr("src", response.picture.data.url);
+  window.location.href="/search"
+ 
 
 }
 
