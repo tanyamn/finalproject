@@ -15,6 +15,5 @@ function initializePage() {
 }
 
 function projectClick(e) {
-	e.preventDefault();
 	ga("send", "event",'name', 'click');
 }
