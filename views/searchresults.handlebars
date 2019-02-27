@@ -17,7 +17,7 @@
 	<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-
+	<script src="/js/analytics.js"></script>
 
 
 
@@ -96,7 +96,7 @@
 			{{#each mentors}}
 			<div class="mentors" >
 				<img src="{{imageURL}}" class="img-responsive">
-				<p><a href="/{{profile}}"><h3>{{name}}</h3> </a></p>
+				<p><a href="/{{profile}}" id="name"><h3>{{name}}</h3> </a></p>
 				<p>{{job}}</p>
 				<p>{{company}}</p>
 				<p>{{location}}</p>
