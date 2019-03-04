@@ -300,6 +300,7 @@ div.message.right .corner{
     right: 15px;
     top: 23px;
     border:none;
+    color: black;
 }
 #sendmessage button:hover{
     cursor:pointer;
@@ -307,6 +308,10 @@ div.message.right .corner{
 }
 #sendmessage button:focus{
      outline: 0;     
+}
+
+button {
+  color:black;
 }
 
 #disappear {
