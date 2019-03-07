@@ -5,6 +5,7 @@
   overflow: hidden; /* Overflow due to float */
   bottom: 0;
   position: fixed;
+  padding: 0px;
   margin-left:0px;
   height: 75px;
 }
@@ -21,8 +22,10 @@
 
 .icon-bar a:hover {
   background-color: black; /* Add a hover color */
+  height: 100%;
 }
 
 .active {
   background-color: #2874A6; /* Add an active/current color */
+  height: 100%;
 }
