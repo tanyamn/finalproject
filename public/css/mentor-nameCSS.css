@@ -1,6 +1,7 @@
-body{
-    padding-top: 50px;
+body .container{
+    padding-top: 20px;
     padding-bottom: 50px;
+    font-family: Lora;
   }
 
 /*Back button */
@@ -18,7 +19,7 @@ a:hover {
 .previous {
   background-color: #2874A6;
   color: white;
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-family: Lora;
 }
 
 
@@ -84,6 +85,7 @@ input[type=button] {
   bottom: 80px;
   right: 5px;
   width: 250px;
+  font-family: Lora;
 }
 
 /* The popup chat - hidden by default */
@@ -95,6 +97,7 @@ input[type=button] {
   border: 3px solid #f1f1f1;
   z-index: 9;
   width: 250px;
+  font-family: Lora;
 }
 
 /* Add styles to the form container */
