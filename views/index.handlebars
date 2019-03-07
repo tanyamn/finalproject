@@ -49,13 +49,13 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
         <form>
           <input type="text" id="email" class="fadeIn second" name="email" placeholder="email">
           <input type="password" id="password" class="fadeIn third" name="login" placeholder="password">
-          <input type="submit" class="fadeIn fourth" value="login" formaction="/search">
+          <input type="submit" class="fadeIn fourth" value="login" formaction="/home">
         </form>
       </div>
 
 
       <p class="facebookLogin">
-        <fb:login-button data-size="large" scope="public_profile,email" onlogin="checkLoginState()" onclick="/search.handlebars">
+        <fb:login-button data-size="large" scope="public_profile,email" onlogin="checkLoginState()" onclick="/home.handlebars">
       </fb:login-button>   
     </p>
 
