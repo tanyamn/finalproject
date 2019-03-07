@@ -1,6 +1,6 @@
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #424C55;
+  background-color: #8E4444;
   overflow: hidden;
   height:60px;
 }
@@ -20,8 +20,9 @@
 .topnav a {
   float: left;
   margin-top: 3px;
-  color: #f2f2f2;
+  font-size: 23px; /* Take out if necessary?? */
   font-family: Lora;
+  color: #f2f2f2;
 }
 
 .btn-back {

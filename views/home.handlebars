@@ -10,11 +10,12 @@
 	<link rel="stylesheet" href="css/top-navbar.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lora" />
 
+	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
-	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lora" />
+	<script src="/js/home.js"></script>
 
 	<!-- Google Analytics Content Experiment code -->
 	<script>function utmx_section(){}function utmx(){}(function(){var
@@ -35,27 +36,40 @@
 
 <style>
 
+	html {
+		scroll-behavior: smooth;
+	}
+
 	.jumbotron{
-		background-color: #8A4242;
-		color: #ffffff;
-		padding: 92px 25px;
+		background-color: #f6f6f6;
+		color: black;
+		padding: 76px 25px;
+	}
+
+
+	.downarrow a {
+		font-size: 65px;
+		color: black;
+		text-align: center;
+	}
+
+	.downarrow2 a {
+		font-size: 55px;
+		color:black;
 	}
 
 	.container-fluid {
 		padding: 60px 50px;
-	}
-
-	.bg-grey {
 		background-color: #f6f6f6;
 	}
 
-	.logo-small {
-  		color: #f4511e;
-  		font-size: 50px;
+	.bg-grey {
+		background-color: white;
 	}
 
+
 	.logo {
-  		color: #f4511e;
+  		color: #8E4444;
   		font-size: 200px;
 	}
 
@@ -64,6 +78,20 @@
 			text-align: center;
 			margin: 25px 0;
 		}
+	}
+
+	span.step {
+  		background: #8E4444;
+  		border-radius: 0.8em;
+  		-moz-border-radius: 0.8em;
+  		-webkit-border-radius: 0.8em;
+  		color: white;
+  		display: inline-block;
+  		font-weight: bold;
+  		line-height: 1.6em;
+  		margin-right: 5px;
+  		text-align: center;
+  		width: 1.6em; 
 	}
 </style>
 
@@ -78,65 +106,63 @@
 		<p>Connect deeper</p>
 
 		<div class="downarrow">
-			
+			<a href="#section2"><i class="fa fa-angle-double-down"></i></a>
 		</div>
 	</div>
 
-
-
-	<div class="container-fluid text-center">
+	<div class="container-fluid bg-grey" id="section2">
 		<div class="row">
-			<div class=col-sm-4">
-				<span class="glyphicon glyphicon-signal logo"></span>
+			<div class="col-sm-4">
+				<span class="glyphicon glyphicon-transfer logo"></span>
 			</div>
 			<div class="col-sm-8">
-				<h2>About Company Page</h2>
-				<h4>Lorem ipsum..</h4>
-				<p>Lorem ipsum..</p>
-				<button class="btn btn-default btn-lg">Get in Touch</button>
-			</div>
-			
-		</div>
-	</div>
+				<h2>About Mentor</h2>
+				<h4><strong>MISSION:</strong> Connecting students to mentors in their career path</h4>
+				<p><strong>VISION:</strong> We aim to provide available resources and opportunities for students to figure out what they are passionate about and the means in which they can achieve their career goals.</p>
 
-	<div class="container-fluid bg-grey">
-		<div class="row">
-			<div class="col-sm-4">
-				<span class="glyphicon glyphicon-globe logo"></span>
-			</div>
-			<div class="col-sm-8">
-				<h2>Our Values</h2>
-				<h4><strong>MISSION:</strong> Our mission lorem ipsum..</h4>
-				<p><strong>VISION:</strong> Our vision Lorem ipsum..</p>
+				<div class="downarrow2 text-center">
+					<a href="#section3"><i class="fa fa-angle-double-down"></i></a>
+				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="container-fluid text-center">
-		<h2>SERVICES</h2>
-		<h4>What we offer</h4>
-		<br>
+	<div class="container-fluid text-center" id="section3">
+		<h2>CONNECT TODAY</h2>
+		<h4>How it works</h4>
 		<div class="row">
 			<div class="col-sm-4">
-				<span class="glyphicon glyphicon-off"></span>
-				<h4>POWER</h4>
-				<p>Lorem ipsum dolar sit amet..</p>
+				<span class="step">1</span>
+				<h4>SEARCH</h4>
+				<p>Search for a mentor based on location, profession, or name.</p>
 			</div>
 			<div class="col-sm-4">
-				<span class="glyphicon glyphicon-heart"></span>
-				<h4>LOVE</h4>
-				<p>Lorem ipsum dolar sit amet..</p>
+				<span class="step">2</span>
+				<h4>EXPLORE</h4>
+				<p>Explore through the different mentors.</p>
 			</div>
 			<div class="col-sm-4">
-				<span class="glyphicon glyphicon-lock"></span>
-				<h4>JOB DONE</h4>
-				<p>Lorem ipsum dolar sit amet..</p>
+				<span class="step">3</span>
+				<h4>SELECT</h4>
+				<p>Select a mentor of your choosing.</p>
 			</div>
+			<div class="col-sm-4">
+				<span class="step">4</span>
+				<h4>MESSAGE</h4>
+				<p>Message the mentor to learn more about their profession.</p>
+			</div>
+			<div class="col-sm-4">
+				<span class="step">5</span>
+				<h4>CONNECT</h4>
+				<p>Connect with the mentor and build relationships.</p>
+			</div>
+			<br>
 		</div>
 	</div>
 
 
 <!-- Navigation Bar -->
+
     <div class="icon-bar">
         <a class="active" href=/home><i class="fa fa-home"></i></a>
         <a href="/search"><i class="fa fa-search"></i></a>

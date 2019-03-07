@@ -1,7 +1,7 @@
 /* Navigation Bar */
 .icon-bar {
   width: 100%; /* Full-width */
-  background-color: #424C55; /* Dark-grey background */
+  background-color: #8E4444; /* Dark-grey background */
   overflow: hidden; /* Overflow due to float */
   bottom: 0;
   position: fixed;
@@ -26,6 +26,6 @@
 }
 
 .active {
-  background-color: #2874A6; /* Add an active/current color */
+  background-color: #424C55; /* Add an active/current color */
   height: 100%;
 }
