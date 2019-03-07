@@ -3,6 +3,7 @@
 body {
   overflow: scroll;
   margin-left: 0px;
+  font-family: Lora;
 }
 
 
@@ -21,15 +22,15 @@ h1 {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-family: Lora;
 }
 
 p {
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-family: Lora;
 }
 
 h3 {
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-family: Lora;
   margin-right: 150px;
 }
 
@@ -39,6 +40,10 @@ h3 {
 
 .mentors {
 	max-width: 320px; 
+}
+
+.mentors h3{
+  font-family: Lora;
 }
 
 

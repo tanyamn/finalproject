@@ -4,7 +4,8 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: Lora;
   height: 100vh;
 }
 
@@ -19,8 +20,8 @@ a {
 h1 {
   
 
-    font-size: 100px;
-    font-family: arial, sans-serif;
+    font-size: 110px;
+    font-family: Lora;
     font-weight: normal;
     text-transform: uppercase;
     position: fixed;
