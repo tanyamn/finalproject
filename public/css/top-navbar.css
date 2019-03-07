@@ -1,0 +1,18 @@
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #424C55;
+  overflow: hidden;
+  height:60px;
+}
+
+/* Style the words inside the navigation bar */
+.topnav p {
+  float: center;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 27px;
+  margin-top: 0.2px;
+}
+

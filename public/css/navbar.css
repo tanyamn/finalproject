@@ -1,13 +1,13 @@
 /* Navigation Bar */
 .icon-bar {
   width: 100%; /* Full-width */
-  background-color: #424949; /* Dark-grey background */
+  background-color: #424C55; /* Dark-grey background */
   overflow: hidden; /* Overflow due to float */
   bottom: 0;
   position: fixed;
   padding: 0px;
   margin-left:0px;
-  height: 75px;
+  height: 70px;
 }
 
 .icon-bar a {

@@ -1,8 +1,6 @@
-body{
-    padding-top: 50px;
+body .container{
+    padding-top: 20px;
     padding-bottom: 50px;
-
-
 }
         .image-container {
             position: relative;
@@ -36,15 +34,6 @@ body{
             opacity: 1;
         }
 
-/* Button Styling 
-
-input[type=button] {
-    padding:5px; 
-    border:2px solid #ccc; 
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-}
-*/
 
 /* The Modal (background) */
 .modal {
