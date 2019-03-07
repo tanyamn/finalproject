@@ -43,7 +43,8 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 <body>
 
 	<div class="topnav">
-		<a href="/search"> < Back </a>
+		<a href="/search" class="btn-back"> < Back
+		</a>
         <p>Search Results</p>
     </div>
 
@@ -96,10 +97,14 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 {{else}}
 <body>
 	<div class="topnav">
+		<a href="/search" class="btn-back"> < Back
+		</a>
         <p>Search Results</p>
     </div>
 
 	<div class="container">
+
+		<!--
 
 		<div class="back">
 			<a href="/search" id="back" class="previous">&laquo; Back</a>
@@ -107,6 +112,8 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 
 		<h1>Search Results</h1>
 
+	-->
+<br><br>
 		<div class="mentor-container">
 			{{#each mentors}}
 			<div class="mentors" >
