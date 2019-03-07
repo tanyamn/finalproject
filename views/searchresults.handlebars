@@ -12,6 +12,7 @@
 
 	<link href="../css/searchresultsCSS.css" rel="stylesheet">
 	<link href="../css/navbar.css" rel="stylesheet">
+	<link href="../css/top-navbar.css" rel="stylesheet">
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -41,17 +42,24 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 {{#if viewAlt}}
 <body>
 
+	<div class="topnav">
+		<a href="/search"> < Back </a>
+        <p>Search Results</p>
+    </div>
+
 	<div class="container">
 
+		<!--
 		<div class="back">
 			<a href="/search" id="back" class="previous">&laquo; Back</a>
 		</div>
+		-->
 
-		<br>
+		
 
 
 	    <hgroup class="mb20">
-			<h1><strong>Search Results</strong></h1>
+			<!-- <h1><strong>Search Results</strong></h1> -->
 			<h2 class="lead"><strong class="text-danger">5</strong> results were found for your search</h2>								
 		</hgroup>
 
@@ -87,6 +95,10 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 
 {{else}}
 <body>
+	<div class="topnav">
+        <p>Search Results</p>
+    </div>
+
 	<div class="container">
 
 		<div class="back">
