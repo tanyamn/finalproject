@@ -157,55 +157,35 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
       <p>Search</p>
     </div> 
 
-  <div class="container">
-    
-  </div>
-
-  <br>
-
-  <div class="paragraph">
-    <p> Search for mentors here by name, profession, or location. Use the drop-down menu to filter results. </p>
-    <br>
-  </div>
+  <section id="home" class="helpr-section" >
+    <div class="container">
+      <div class="helpr-content" data-stellar-offset-parent="true"> 
 
 
-  <!--Make sure the form has the autocomplete function switched off:-->
-  <form autocomplete="off" action="/action_page.php">
-    
-    <div class="input-group-btn" >
-      <button type="button" id="filter" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ><span class="label-icon" >Filter</span> <span class="caret" >&nbsp;</span></button>
-      <div class="dropdown-menu dropdown-menu-right" >
-        <ul class="category_filters" >
-          <li >
-            <input class="cat_type category-input" data-label="All" id="all" value="" name="radios" type="radio" ><label for="all" >All</label>
-          </li>
-          <li >
-            <input type="radio" name="radios" id="Profession" value="Profession" ><label class="category-label" for="Profession" >Profession</label>
-          </li>
-          <li >
-            <input type="radio" name="radios" id="Location" value="Location" ><label class="category-label" for="Location" >Location</label>
-          </li>
-          <li >
-            <input type="radio" name="radios" id="Name" value="Name" ><label class="category-label" for="Name" >Name</label>
-          </li>
-        </ul>
+
+        <div class="helpr-text" data-wow-duration="1s" data-wow-delay="0.5s"> 
+          <!-- TAGLINE -->
+          <div class="webHomeTitle">
+            <h1 class="helpr-title">Start Connecting!</h1>
+
+
+
+
+
+            <div class="autocomplete" style="width:400px;">
+              <input id="myInput" type="text" name="searchbar" placeholder="Enter Name, Location, or Profession">
+
+
+
+              <button id="searchBtn" type="button" class="btn btn-secondary btn-search" onclick="location.href='/searchresults/page_A'"><span class="glyphicon glyphicon-search" >&nbsp;</span> <span class="label-icon" ></span></button>
+            </div>
+
+          </div>
+        </div>
       </div>
-
     </div>
-
-    <br>
-
-
-    <div class="autocomplete" style="width:300px;">
-      <input id="myInput" type="text" name="searchbar" placeholder="Search">
-      
-
-      
-      <button id="searchBtn" type="button" class="btn btn-secondary btn-search" onclick="location.href='/searchresults/page_A'"><span class="glyphicon glyphicon-search" >&nbsp;</span> <span class="label-icon" ></span></button>
-    </div>
-
-
-  </form>
+ 
+ 
 
  <script>
   function autocomplete(inp, arr) {
