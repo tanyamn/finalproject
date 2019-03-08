@@ -10,7 +10,7 @@ body {
 }
 
 a {
-  color: #92badd;
+  color: #8e4343;
   display:inline-block;
   text-decoration: none;
   font-weight: 400;
@@ -18,13 +18,12 @@ a {
 }
 
 h1 {
-    font-size: 110px;
-    font-family: Lora;
+    font-size: 180px;
+    font-family: impact;
     font-weight: normal;
-    text-transform: uppercase;
     position: fixed;
     text-align: center;
-    margin: 300px 5px 10px 255px;
+    margin: 250px 5px 10px 225px;
     color: #f8f9fa;
 }
 
