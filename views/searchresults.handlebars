@@ -10,17 +10,18 @@
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<link href="css/bootstrap-theme.css" rel="stylesheet"> -->
 
+	
 	<link href="../css/searchresultsCSS.css" rel="stylesheet">
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 	<link href="../css/navbar.css" rel="stylesheet">
 	<link href="../css/top-navbar.css" rel="stylesheet">
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lora" />
-
-	<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 	
 	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script src="/js/analytics.js"></script>
+
 
 
 <!-- Google Analytics Content Experiment code -->
@@ -40,25 +41,15 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 	
 </head>
 
-{{#if viewAlt}}
+{{#if viewAlt}} <!-- page B -->
 <body>
 
 	<div class="topnav">
-		<a href="/search" class="btn-back"> < Back
-		</a>
+		<button onclick = "location.href='/search'" class="btn-back" id="back"> < </button>
         <p>Search Results</p>
     </div>
 
 	<div class="container">
-
-		<!--
-		<div class="back">
-			<a href="/search" id="back" class="previous">&laquo; Back</a>
-		</div>
-		-->
-
-		
-
 
 	    <hgroup class="mb20">
 			<!-- <h1><strong>Search Results</strong></h1> -->
@@ -95,25 +86,15 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 
 		{{/each}}
 
-{{else}}
+{{else}} <!-- page A -->
 <body>
 	<div class="topnav">
-		<a href="/search" class="btn-back"> < Back
-		</a>
+		<button onclick = "location.href='/search'" class="btn-back" id="back"> < </button>
         <p>Search Results</p>
     </div>
 
 	<div class="container">
 
-		<!--
-
-		<div class="back">
-			<a href="/search" id="back" class="previous">&laquo; Back</a>
-		</div>
-
-		<h1>Search Results</h1>
-
-	-->
 <br><br>
 		<div class="mentor-container">
 			{{#each mentors}}

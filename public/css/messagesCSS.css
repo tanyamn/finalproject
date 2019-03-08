@@ -1,6 +1,6 @@
 * { margin: 0px; padding: 0px; }
 body {
-    background: white;
+    background: #f6f6f6;
     font:12px; 
     font-family: Lora;
 
@@ -32,7 +32,7 @@ h1 {
 #view-code:hover{opacity:1;}
 #chatbox{
     width:290px;
-    background:#fff;
+    background:#f6f6f6;
     border-radius:6px;
     overflow:hidden;
     height:484px;
@@ -67,7 +67,7 @@ h1 {
 #topmenu span.history:hover{background-position:-190px -47px; cursor:pointer;}
 .friend{
     height:70px;
-    border-bottom:1px solid #e7ebee;        
+    border-bottom:1px solid #424C55;        
     position:relative;
 }
 .friend:hover{
@@ -96,13 +96,13 @@ h1 {
 .friend p strong{
   font-weight:600;
   font-size:15px;
-    color:#597a96;  
+    color:#8E4444;  
 
 }
 .friend p span{
     font-size:13px;
     font-weight:400;
-    color:#aab8c2;
+    color:#3C464E;
 }
 .friend .status{
     background:#26c281;
@@ -114,7 +114,7 @@ h1 {
     right:17px;
 }
 .friend .status.away{background:#ffce54;}
-.friend .status.inactive{background:#eaeef0;}
+.friend .status.inactive{background:#ABAEAF;}
 #search{
     background:#e3e9ed url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/search.png") -11px 0 no-repeat;
     height:60px;

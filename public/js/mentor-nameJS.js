@@ -9,6 +9,8 @@ function closeForm() {
 function myFunction() {
   // Get the snackbar DIV
   var x = document.getElementById("snackbar");
+  var y = document.getElementById("send");
+  console.log(send.value);
 
   // Add the "show" class to DIV
   x.className = "show";

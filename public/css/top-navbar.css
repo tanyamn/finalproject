@@ -17,20 +17,35 @@
   text-align: center;
 }
 
-.topnav a {
-  float: left;
-  margin-top: 3px;
-  font-size: 23px; /* Take out if necessary?? */
-  font-family: Lora;
-  color: #f2f2f2;
+.logout {
+    position: absolute;
+    color: white;
+    line-height: 30px;
+    top: 0;
+    z-index: 6;
+    font-size: 16px;
+    font-family: Lora;
+    margin-top: 13px;
+    margin-left: 290px;
+
+    background-color: #985555;
+    border: 2px 
+    border-color: black;
+    border-radius: 5px;
+    padding: 0.5px 4px;
 }
 
 .btn-back {
     position: absolute;
-    color: #fff;
+    color: #f2f2f2;
     line-height: 50px;
     top: 0;
     left: 10px;
     z-index: 6;
-    font-size: 16px;
+    font-size: 32px;
+    font-family: Lora;
+    margin-top: 3px;
+    float: left;
 }
+
+

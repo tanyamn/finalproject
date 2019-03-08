@@ -1,10 +1,11 @@
 /* PAGE A */
 
-body {
+/*body {
   overflow: scroll;
   margin-left: 0px;
   font-family: Lora;
-}
+  background-color: #f6f6f6;
+}*/
 
 
 img {
@@ -47,7 +48,20 @@ h3 {
 }
 
 
+
+
+
+
+
 /* PAGE B */
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #333;
+  background-color: #f6f6f6;
+}
+
 .profile-teaser-left {
     float: left; 
     width: 30%; 
@@ -60,6 +74,7 @@ h3 {
 .blank-space {
   float: left;
   width: 10%;
+  margin-right: 30px;
 }
 
 .profile-teaser-main {
@@ -89,22 +104,6 @@ h3 {
 
 
 
-/*Back button */
-#back {
-  text-decoration: none;
-  display: inline-block;
-  padding: 8px 16px;
-}
 
-a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.previous {
-  background-color: #2874A6;
-  color: white;
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-}
 
 

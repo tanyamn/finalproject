@@ -46,8 +46,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 
 <body>
 	<div class="topnav">
-		<a href="/searchresults/page_A" class="btn-back"> < Back
-		</a>
+		<button onclick = "location.href='/searchresults/page_A'" class="btn-back" id="back"> < </button>
         <p>Mentor Profile</p>
     </div>	
 
@@ -150,7 +149,8 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 		<label for="msg"><b>Message</b></label>
 		<textarea placeholder="Type message.." name="msg" required></textarea>
 
-		<button type="submit" class="btn" onclick="myFunction()">Send</button>
+		<button type="submit" class="btn" id="send" onclick="myFunction()">Send</button>
+		
 		<div id="snackbar">Your message was sent!</div>
 
 		<button type="button" class="btn cancel" onclick="closeForm()">Close</button>

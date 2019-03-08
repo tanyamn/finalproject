@@ -126,7 +126,7 @@ input[type=button] {
 
 /* Set a style for the submit/login button */
 .form-container .btn {
-  background-color: #4CAF50;
+  background-color: #565758;
   color: white;
   padding: 16px 20px;
   border: none;
@@ -138,7 +138,7 @@ input[type=button] {
 
 /* Add a red background color to the cancel button */
 .form-container .cancel {
-  background-color: red;
+  background-color: #8E4444;
 }
 
 /* Add some hover effects to buttons */
