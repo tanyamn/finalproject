@@ -75,5 +75,38 @@
 
 
 
+.helpr-section {
+    
+    background: #f6f6f6 url('https://png.pngtree.com/element_origin_min_pic/16/10/03/2057f253a700aac.jpg');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 100% 70;
+    
+}
+
+
+
+.helpr-title {
+    padding: 100px 0 85px;
+    font-size: 40px;
+    line-height: 20px;
+    -webkit-text-shadow: 0 4px 6px rgba(0,0,0,.20);
+    -moz-text-shadow: 0 4px 6px rgba(0,0,0,.20);
+    text-shadow: 0 4px 6px rgba(0,0,0,.20);
+    font-family: 'LatoWebBlack', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-align: center;
+    color: #555;
+    margin: 0;
+    position: relative;
+}
+
+.helpr-text {
+    height: 690px;
+}
+
+
+
+
+
 
 
